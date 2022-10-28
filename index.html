@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -18,35 +22,36 @@
     <!-- header -->
 
     <header class="header">
-      <nav>
-        <a class="logo link" href="./index.html"
-          >Web<span class="logo-header">Studio</span></a
-        >
+      <div class="container">
+        <nav>
+          <a class="logo link" href="./index.html"
+            >Web<span class="logo-header">Studio</span></a
+          >
+          <ul class="nav-list list">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link link current">Студія</a>
+            </li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="nav-link link">Портфоліо</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
         <ul class="nav-list list">
-          <li class="nav-item">
-            <a href="./index.html" class="nav-link link current">Студія</a>
+          <li>
+            <a href="mailto:info@devstudio.com" class="header-contacts link"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="nav-item">
-            <a href="./portfolio.html" class="nav-link link">Портфоліо</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link link">Контакти</a>
+          <li>
+            <a href="tel:+380961111111" class="header-contacts link"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-
-      <ul class="nav-list list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="header-contacts link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="header-contacts link"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
 
     <!-- main -->
@@ -63,45 +68,47 @@
 
       <section>
         <h2 hidden>skill</h2>
-        <ul class="nav-list list">
-          <li>
-            <h3 class="hero-description-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="hero-description">
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
+        <div class="container">
+          <ul class="nav-list list">
+            <li>
+              <h3 class="hero-description-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="hero-description">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
 
-          <li>
-            <h3 class="hero-description-title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="hero-description">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
+            <li>
+              <h3 class="hero-description-title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="hero-description">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
 
-          <li>
-            <h3 class="hero-description-title">ПЛАНУВАННЯ</h3>
-            <p class="hero-description">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
+            <li>
+              <h3 class="hero-description-title">ПЛАНУВАННЯ</h3>
+              <p class="hero-description">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
 
-          <li>
-            <h3 class="hero-description-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="hero-description">
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
+            <li>
+              <h3 class="hero-description-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="hero-description">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- occupation -->
 
       <section>
         <h2 class="section-title">Чим ми займаємося</h2>
-        <ul class="nav-list list">
+        <ul class="nav-list list container">
           <li>
             <img
               src="./images/work/img1.jpg"
@@ -133,7 +140,7 @@
 
       <section class="team">
         <h2 class="section-title">Наша команда</h2>
-        <ul class="nav-list list">
+        <ul class="nav-list list container">
           <li>
             <img
               src="./images/team/team1.jpg"

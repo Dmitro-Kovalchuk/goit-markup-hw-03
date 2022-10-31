@@ -83,6 +83,7 @@ address {
 
 .header {
   background-color: var(--hat-color);
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -216,13 +217,33 @@ address {
   color: var(--feature-color);
 }
 
+/* -------------activity----------- */
+
+.activity-list {
+  gap: 30px;
+}
+
 /* ----------team---------- */
 
 .team {
-  background-color: #F5F4FA;;
+  background-color: #f5f4fa;
+}
+
+.team-list {
+  gap: 30px;
+}
+
+.team-item {
+  text-align: center;
+  background-color: var(--hat-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -230,6 +251,7 @@ address {
 }
 
 .team-position {
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -248,28 +270,31 @@ address {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-top: 60px;
+  padding-top: 60px;
+  display: flex;
   margin-bottom: 20px;
   color: var(--attention-color);
 }
-
-/* .footer .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-} */
 
 .logo-footer {
   color: var(--hat-color);
 }
 
+.footer-item {
+  display: flex;
+  margin-bottom: 9px;
+}
+
+/* Я щось тут не зрозумів як правельно зробити нижній падінг */
+.footer-item-1 {
+  padding-bottom: 60px;
+}
+/* Я щось тут не зрозумів як правельно зробити нижній падінг */
+
 .footer-address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--hat-color);
-}
-
-.footer-nav-list {
-  column-gap: 9px;
 }
 
 .footer-contacts {
@@ -285,8 +310,6 @@ address {
   color: var(--attention-color);
 }
 
-/* ----------footer---------- */
-
 /* ----------portfolio-html---------- */
 
 .filter-btn {
@@ -297,10 +320,16 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  padding: 6px 22px;
   color: var(--text-color);
   background-color: #f5f4fa;
   border-radius: 4px;
   border-color: transparent;
+}
+
+.filter-btn.active {
+  background-color: var(--attention-color);
+  color: var(--hat-color);
 }
 
 .filter-btn:hover,
@@ -308,7 +337,17 @@ address {
   background-color: var(--attention-color);
   color: var(--hat-color);
 }
+
+.btn-list {
+  padding-left: 300px;
+  padding-bottom: 34px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .filter-title {
+  padding: 20px 24px 4px 24px;
   font-size: 18px;
   line-height: 2;
 
@@ -316,6 +355,7 @@ address {
 }
 
 .filter-info {
+  padding: 0px 24px 20px 24px;
   font-size: 16px;
   line-height: 1.88;
 
@@ -324,7 +364,20 @@ address {
   color: var(--feature-color);
 }
 
-.filter-btn.active {
-  background-color: var(--attention-color);
-  color: var(--hat-color);
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.portfolio-item {
+  width: 370px;
+  height: 404px;
+  left: 215px;
+  top: 262px;
+
+  background-color: var(--hat-color);
+  border: 1px solid #eeeeee;
 }

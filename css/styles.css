@@ -267,6 +267,7 @@ address {
 /* ----------footer---------- */
 
 .footer {
+  padding: 60px 0;
   background-color: var(--background-section);
 }
 
@@ -286,6 +287,10 @@ address {
 
 .footer-item {
   margin-bottom: 9px;
+}
+
+.footer-item:last-child {
+  margin-bottom: 0;
 }
 
 .footer-address {
@@ -336,19 +341,20 @@ address {
 }
 
 .btn-list {
-  padding-left: 300px;
-  padding-bottom: 34px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
+  margin-bottom: 50px;
+  padding: 0;
 }
 
 .filter-title {
-  padding: 20px 24px 4px 24px;
+  padding: 20px 24px 0 24px;
   font-size: 18px;
   line-height: 2;
-
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .filter-info {
@@ -371,10 +377,6 @@ address {
 
 .portfolio-item {
   width: 370px;
-  height: 404px;
-  left: 215px;
-  top: 262px;
-
   background-color: var(--hat-color);
   border: 1px solid #eeeeee;
 }

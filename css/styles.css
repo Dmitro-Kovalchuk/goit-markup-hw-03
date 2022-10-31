@@ -82,7 +82,6 @@ address {
 /* ----------header---------- */
 
 .header {
-  background-color: var(--hat-color);
   border-bottom: 1px solid #ececec;
 }
 
@@ -100,6 +99,7 @@ address {
 }
 
 .nav-link {
+  display: block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -119,20 +119,18 @@ address {
 .header-container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .header-nav {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 
 .nav-list {
   display: flex;
   align-items: center;
   gap: 50px;
-  margin-right: 344px;
 }
 
 .nav-contacts {
@@ -155,8 +153,8 @@ address {
 /* -------------hero----------- */
 
 .hero {
-  background: var(--background-section);
-  padding: 200px;
+  background-color: var(--background-section);
+  padding: 200px 0;
   text-align: center;
 }
 .hero-title {
@@ -165,8 +163,9 @@ address {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  padding-left: 215px;
-  padding-right: 215px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   text-transform: uppercase;
   color: var(--hat-color);
 }
@@ -194,7 +193,7 @@ address {
 /* -------------about----------- */
 
 .about {
-  padding-top: 94px;
+  padding-bottom: 0;
 }
 
 .about-list {
@@ -202,7 +201,12 @@ address {
   gap: 30px;
 }
 
+.about-item {
+  width: 270px;
+}
+
 .about-title {
+  font-size: 14px;
   margin-bottom: 10px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -234,6 +238,7 @@ address {
 }
 
 .team-item {
+  padding-bottom: 30px;
   text-align: center;
   background-color: var(--hat-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -251,7 +256,7 @@ address {
 }
 
 .team-position {
-  margin-bottom: 30px;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -270,8 +275,7 @@ address {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  padding-top: 60px;
-  display: flex;
+  display: block;
   margin-bottom: 20px;
   color: var(--attention-color);
 }
@@ -281,15 +285,8 @@ address {
 }
 
 .footer-item {
-  display: flex;
   margin-bottom: 9px;
 }
-
-/* Я щось тут не зрозумів як правельно зробити нижній падінг */
-.footer-item-1 {
-  padding-bottom: 60px;
-}
-/* Я щось тут не зрозумів як правельно зробити нижній падінг */
 
 .footer-address {
   line-height: 1.71;
